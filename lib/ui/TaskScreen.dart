@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import './Complete.dart';
 import './Task.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 class TodoScreen extends StatefulWidget {
   @override

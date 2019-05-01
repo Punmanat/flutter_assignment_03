@@ -38,10 +38,9 @@ class NewSubjectState extends State<NewSubject> {
                       child: Text("Save"),
                       onPressed: () {
                         if (_formkey.currentState.validate()) {
-                          print(_store);
                           _store.collection('todo').add(
                               {'title': subject.text, 'done': 0}).then((r) {
-                            Navigator.pushReplacementNamed(context, "/");
+                            Navigator.pushReplacementNamed(context, '/');
                           });
                         }
                       },

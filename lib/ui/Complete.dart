@@ -25,15 +25,15 @@ class CompleteState extends State<Complete> {
                 value:
                     snapshot.data.documents.elementAt(index).data['done'] == 1,
                 onChanged: (bool value) {
-                  _store
-                      .collection('todo')
-                      .document(
-                          snapshot.data.documents.elementAt(index).documentID)
-                      .setData({
-                    'title':
-                        snapshot.data.documents.elementAt(index).data['title'],
-                    'done': 0
-                  });
+                  // _store
+                  //     .collection('todo')
+                  //     .document(
+                  //         snapshot.data.documents.elementAt(index).documentID)
+                  //     .setData({
+                  //   'title':
+                  //       snapshot.data.documents.elementAt(index).data['title'],
+                  //   'done': 0
+                  // });
                 },
               );
             },
